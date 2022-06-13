@@ -3,6 +3,7 @@
 module NameType where
 
 import Data.String (IsString, String)
+import Prelude (Eq, Ord, Show)
 
 -- | The name of an anonymous file
 --
@@ -10,3 +11,4 @@ import Data.String (IsString, String)
 --
 newtype Name = NameString{ nameString :: String }
     deriving newtype IsString
+    deriving stock (Eq, Ord, Show)

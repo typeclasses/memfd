@@ -1,4 +1,8 @@
+{-# language DerivingStrategies #-}
+
 module HugeTLBSizeType where
+
+import Prelude (Eq, Ord, Enum, Bounded, Show)
 
 data HugeTLBSize =
     HugeTLB_64KB
@@ -13,3 +17,4 @@ data HugeTLBSize =
   | HugeTLB_1GB
   | HugeTLB_2GB
   | HugeTLB_16GB
+  deriving stock (Eq, Ord, Enum, Bounded, Show)
