@@ -13,6 +13,7 @@ import qualified CreateFlags as Flags
 
 import Control.Monad (return)
 import Control.Monad.Trans.State.Strict (State, execState, modify')
+import Data.Maybe (Maybe (..))
 import Data.Monoid (mempty, (<>))
 
 createOptionsFlags :: CreateOptions -> CreateFlags
@@ -39,7 +40,10 @@ setHugeTLBFlags x =
     setFlags Flags.hugeTLB
     case x of
         DefaultHugeTLB -> return ()
-        HugeTLBSize y -> setFlags (Flags.hugeTLBSize y)
+        HugeTLBSize y ->
+            case Flags.hugeTLBSize y of
+                Nothing -> return ()
+                Just z -> setFlags z
 
 setFlags :: CreateFlags -> State CreateFlags ()
 setFlags x = modify' (<> x)

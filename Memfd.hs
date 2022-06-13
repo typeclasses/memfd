@@ -12,6 +12,7 @@ module Memfd
     FileSystem (..),
     HugeTLBOptions (..),
     HugeTLBSize (..),
+    supportedHugeTLBSizes,
   )
   where
 
@@ -23,3 +24,4 @@ import HugeTLBSizeType (HugeTLBSize (..))
 import NameType (Name (..))
 import OnExecType (OnExec (..))
 import SealingType (Sealing (..))
+import SupportedHugeTLBSizes (supportedHugeTLBSizes)

@@ -44,3 +44,4 @@ library
         NameType
         OnExecType
         SealingType
+        SupportedHugeTLBSizes

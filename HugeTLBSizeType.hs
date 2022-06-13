@@ -18,3 +18,5 @@ data HugeTLBSize =
   | HugeTLB_2GB
   | HugeTLB_16GB
   deriving stock (Eq, Ord, Enum, Bounded, Show)
+
+-- ^ These sizes may not all be available on your platform. See 'Memfd.supportedHugeTLBSizes'.
