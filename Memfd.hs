@@ -5,6 +5,7 @@
 module Memfd
   (
     create,
+    defaultCreateOptions,
     CreateOptions (..),
     Name (..),
     OnExec (..),
@@ -18,6 +19,7 @@ module Memfd
 
 import Create (create)
 import CreateOptionsType (CreateOptions (..))
+import DefaultCreateOptions (defaultCreateOptions)
 import FileSystemType (FileSystem (..))
 import HugeTLBOptionsType (HugeTLBOptions (..))
 import HugeTLBSizeType (HugeTLBSize (..))

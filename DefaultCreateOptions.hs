@@ -14,3 +14,10 @@ defaultCreateOptions x =
     , sealing = DoNotAllowSealing
     , fileSystem = TemporaryFileSystem
     }
+
+-- ^
+-- Default options for 'Memfd.create', corresponding to what you get what you use the C library and don't set any flags.
+--
+-- * 'onExec' = 'RemainOpenOnExec'
+-- * 'sealing' = 'DoNotAllowSealing'
+-- * 'fileSystem' = 'TemporaryFileSystem'
