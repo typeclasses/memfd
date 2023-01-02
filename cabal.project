@@ -1,1 +1,1 @@
-packages: ./memfd.cabal
+packages: memfd
