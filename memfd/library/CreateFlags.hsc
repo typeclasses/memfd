@@ -7,25 +7,30 @@ import Data.Maybe (Maybe (..))
 
 #include <linux/memfd.h>
 
--- | Set the close-on-exec (@FD_CLOEXEC@) flag on the new file descriptor
---
--- By default, the new file descriptor is set to remain open across an @execve@ ("execute program") or @fork@ system call and is available to the child process. Use of this flag avoids leaking the file descriptor to child processes.
---
+{-| Set the close-on-exec (@FD_CLOEXEC@) flag on the new file descriptor
+
+By default, the new file descriptor is set to remain open across an @execve@
+("execute program") or @fork@ system call and is available to the child process.
+Use of this flag avoids leaking the file descriptor to child processes.
+-}
 closeOnExec :: CreateFlags
 closeOnExec = CreateFlags (#const MFD_CLOEXEC)
 
--- | Allow sealing operations on this file
---
--- The initial set of seals is empty. If this flag is not set, the initial set of seals will be @F_SEAL_SEAL@, meaning that no other seals can be set on the file.
---
+{-| Allow sealing operations on this file
+
+The initial set of seals is empty. If this flag is not set, the initial set of
+seals will be @F_SEAL_SEAL@, meaning that no other seals can be set on the file.
+-}
 allowSealing :: CreateFlags
 allowSealing = CreateFlags (#const MFD_ALLOW_SEALING)
 
--- | The anonymous file will be created in the hugetlbfs filesystem using huge pages
+{-| The anonymous file will be created in the hugetlbfs filesystem using huge pages
+-}
 hugeTLB :: CreateFlags
 hugeTLB = CreateFlags (#const MFD_HUGETLB)
 
--- | Used in conjunction with 'hugeTLB' to select alternative hugeTLB page sizes
+{-| Used in conjunction with 'hugeTLB' to select alternative hugeTLB page sizes
+-}
 hugeTLBSize :: HugeTLBSize -> Maybe CreateFlags
 
 hugeTLBSize HugeTLB_64KB =

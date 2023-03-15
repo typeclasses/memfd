@@ -6,6 +6,13 @@ import NameType (Name)
 import OnExecType (OnExec (RemainOpenOnExec))
 import SealingType (Sealing (DoNotAllowSealing))
 
+{-| Default options for 'Memfd.create', corresponding to what you get what you
+    use the C library and don't set any flags
+
+* 'onExec' = 'RemainOpenOnExec'
+* 'sealing' = 'DoNotAllowSealing'
+* 'fileSystem' = 'TemporaryFileSystem'
+-}
 defaultCreateOptions :: Name -> CreateOptions
 defaultCreateOptions x =
   CreateOptions
@@ -14,10 +21,3 @@ defaultCreateOptions x =
     , sealing = DoNotAllowSealing
     , fileSystem = TemporaryFileSystem
     }
-
--- ^
--- Default options for 'Memfd.create', corresponding to what you get what you use the C library and don't set any flags.
---
--- * 'onExec' = 'RemainOpenOnExec'
--- * 'sealing' = 'DoNotAllowSealing'
--- * 'fileSystem' = 'TemporaryFileSystem'
