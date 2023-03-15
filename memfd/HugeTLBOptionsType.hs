@@ -1,5 +1,3 @@
-{-# language DerivingStrategies #-}
-
 module HugeTLBOptionsType where
 
 import HugeTLBSizeType (HugeTLBSize)

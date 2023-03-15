@@ -1,5 +1,3 @@
-{-# language DerivingStrategies #-}
-
 module FileSystemType where
 
 import HugeTLBOptionsType (HugeTLBOptions)

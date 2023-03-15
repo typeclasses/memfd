@@ -1,5 +1,3 @@
-{-# language BlockArguments #-}
-
 module CreateOptionsFlags (createOptionsFlags) where
 
 import CreateFlagsType (CreateFlags)

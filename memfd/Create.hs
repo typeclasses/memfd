@@ -1,5 +1,3 @@
-{-# language BlockArguments, CApiFFI #-}
-
 module Create where
 
 import CreateFlagsType (CreateFlags(..))

@@ -1,5 +1,3 @@
-{-# language CPP #-}
-
 module CreateFlags where
 
 import CreateFlagsType (CreateFlags (..))

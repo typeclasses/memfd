@@ -1,5 +1,3 @@
-{-# language DerivingStrategies #-}
-
 module HugeTLBSizeType where
 
 import Prelude (Eq, Ord, Enum, Bounded, Show)

@@ -1,5 +1,3 @@
-{-# language DerivingStrategies #-}
-
 module OnExecType where
 
 import Prelude (Eq, Ord, Enum, Bounded, Show)

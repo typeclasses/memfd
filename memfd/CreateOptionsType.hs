@@ -1,5 +1,3 @@
-{-# language DerivingStrategies #-}
-
 module CreateOptionsType where
 
 import FileSystemType (FileSystem)

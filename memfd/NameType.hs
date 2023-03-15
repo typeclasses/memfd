@@ -1,5 +1,3 @@
-{-# language DerivingStrategies, GeneralizedNewtypeDeriving #-}
-
 module NameType where
 
 import Data.String (IsString, String)

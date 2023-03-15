@@ -1,5 +1,3 @@
-{-# language DerivingStrategies #-}
-
 module SealingType where
 
 import Prelude (Eq, Ord, Enum, Bounded, Show)
