@@ -1,7 +1,7 @@
 cabal-version: 3.0
 
 name: memfd
-version: 1.0.1.1
+version: 1.0.1.2
 synopsis: Open temporary anonymous Linux file handles
 category: Filesystem, Linux
 
