@@ -1,11 +1,13 @@
-"memfd" (**mem**ory **f**ile **d**escriptor) lets us open pseudo-"files" that
-are not actually stored in the "real" file system. This feature is only
-available on Linux.
+"memfd" (**mem**ory **f**ile **d**escriptor) memfd lets us open memory-only
+files that are not linked into a directory and are not backed by persistent
+storage.
+Such a file is described as an "anonymous file".
+It behaves like a regular file, and so can be modified, truncated,
+memory-mapped, and so on.
+However, unlike a regular file, it lives in RAM and has a volatile backing storage.
+Once all references to the file are dropped, it is automatically released.
 
-Such a file is described as an "anonymous file". It behaves like a regular file,
-and so can be modified, truncated, memory-mapped, and so on. However, unlike a
-regular file, it lives in RAM and has a volatile backing storage. Once all
-references to the file are dropped, it is automatically released.
+This feature is only available on Linux.
 
 The recommended way to import this library is:
 
