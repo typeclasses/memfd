@@ -1,7 +1,6 @@
 module Memfd.HugeTLBOptionsType where
 
 import Memfd.HugeTLBSizeType (HugeTLBSize)
-
 import Prelude (Eq, Ord, Show)
 
 {-|

@@ -42,6 +42,7 @@ library
         DerivingStrategies
         GeneralizedNewtypeDeriving
         NoImplicitPrelude
+        ImportQualifiedPost
     ghc-options:
         -Wall
         -Wmissing-deriving-strategies

@@ -1,12 +1,11 @@
 module Memfd.Create where
 
-import Memfd.CreateFlagsType (CreateFlags(..))
-import Memfd.CreateOptionsType (CreateOptions(..))
-import Memfd.CreateOptionsFlags (createOptionsFlags)
-import Memfd.NameType (Name (..))
-
 import Foreign.C as C (CInt (..), CUInt (..))
 import Foreign.C.String (CString, withCString)
+import Memfd.CreateFlagsType (CreateFlags(..))
+import Memfd.CreateOptionsFlags (createOptionsFlags)
+import Memfd.CreateOptionsType (CreateOptions(..))
+import Memfd.NameType (Name (..))
 import System.IO (IO)
 import System.Posix.Types (Fd (..))
 

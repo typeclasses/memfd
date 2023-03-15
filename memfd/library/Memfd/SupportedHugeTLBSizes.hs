@@ -1,13 +1,10 @@
 module Memfd.SupportedHugeTLBSizes where
 
-import Memfd.HugeTLBSizeType
-
-import qualified Memfd.CreateFlags as Flags
-
+import Data.List qualified as List
 import Data.Maybe (isJust)
+import Memfd.CreateFlags qualified as Flags
+import Memfd.HugeTLBSizeType (HugeTLBSize)
 import Prelude (enumFrom, minBound)
-
-import qualified Data.List as List
 
 {-| List of hugetlb sizes that are supported by your platform
 -}

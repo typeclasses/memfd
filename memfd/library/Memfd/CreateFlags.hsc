@@ -1,9 +1,8 @@
 module Memfd.CreateFlags where
 
+import Data.Maybe (Maybe (..))
 import Memfd.CreateFlagsType (CreateFlags (..))
 import Memfd.HugeTLBSizeType (HugeTLBSize (..))
-
-import Data.Maybe (Maybe (..))
 
 #include <linux/memfd.h>
 

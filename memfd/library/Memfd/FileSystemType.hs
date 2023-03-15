@@ -1,7 +1,6 @@
 module Memfd.FileSystemType where
 
 import Memfd.HugeTLBOptionsType (HugeTLBOptions)
-
 import Prelude (Show, Eq, Ord, Show)
 
 data FileSystem =

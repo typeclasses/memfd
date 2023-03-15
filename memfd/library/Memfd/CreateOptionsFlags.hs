@@ -1,18 +1,16 @@
 module Memfd.CreateOptionsFlags (createOptionsFlags) where
 
+import Control.Monad (return)
+import Control.Monad.Trans.State.Strict (State, execState, modify')
+import Data.Maybe (Maybe (..))
+import Data.Monoid (mempty, (<>))
+import Memfd.CreateFlags qualified as Flags
 import Memfd.CreateFlagsType (CreateFlags)
 import Memfd.CreateOptionsType (CreateOptions (..))
 import Memfd.FileSystemType (FileSystem (..))
 import Memfd.HugeTLBOptionsType (HugeTLBOptions (..))
 import Memfd.OnExecType (OnExec (RemainOpenOnExec, CloseOnExec))
 import Memfd.SealingType (Sealing (DoNotAllowSealing, AllowSealing))
-
-import qualified Memfd.CreateFlags as Flags
-
-import Control.Monad (return)
-import Control.Monad.Trans.State.Strict (State, execState, modify')
-import Data.Maybe (Maybe (..))
-import Data.Monoid (mempty, (<>))
 
 createOptionsFlags :: CreateOptions -> CreateFlags
 createOptionsFlags x = execState (setOptionFlags x) mempty
