@@ -1,6 +1,6 @@
 ### 1.0.1.2 (2023-03-15)
 
-Metadata and documentation adjustments only
+Support GHC 9.6
 
 ### 1.0.1.1 (2022-01-01)
 

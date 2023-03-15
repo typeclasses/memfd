@@ -41,7 +41,7 @@ library
         -Wall
         -Wmissing-deriving-strategies
     build-depends:
-      , base ^>= 4.14 || ^>= 4.15 || ^>= 4.16 || ^>= 4.17
+      , base ^>= 4.14 || ^>= 4.15 || ^>= 4.16 || ^>= 4.17 || ^>= 4.18
       , transformers ^>= 0.5.6 || ^>= 0.6
     exposed-modules:
         Memfd
