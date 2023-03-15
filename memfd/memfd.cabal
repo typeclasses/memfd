@@ -21,7 +21,7 @@ license: Apache-2.0
 license-file: license.txt
 
 author: Chris Martin
-maintainer: Chris Martin, Julie Moronuki
+maintainer: hello@typeclasses.com
 
 homepage: https://github.com/typeclasses/memfd
 bug-reports: https://github.com/typeclasses/memfd/issues
