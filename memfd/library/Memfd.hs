@@ -10,16 +10,10 @@ Run "man 2 memfd_create" to see the full documentation.
 -}
 module Memfd
   (
-    create,
-    defaultCreateOptions,
-    CreateOptions (..),
-    Name (..),
-    OnExec (..),
-    Sealing (..),
-    FileSystem (..),
-    HugeTLBOptions (..),
-    HugeTLBSize (..),
-    supportedHugeTLBSizes,
+    {- * The create action -} create,
+    {- * Basic options -} defaultCreateOptions, Name (..),
+    {- * More options -} CreateOptions (..), OnExec (..), Sealing (..), FileSystem (..),
+    {- * HugeTLB -} HugeTLBOptions (..), HugeTLBSize (..), supportedHugeTLBSizes,
   )
   where
 
