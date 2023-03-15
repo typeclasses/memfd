@@ -1,4 +1,4 @@
-module HugeTLBSizeType where
+module Memfd.HugeTLBSizeType where
 
 import Prelude (Eq, Ord, Enum, Bounded, Show)
 

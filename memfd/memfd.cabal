@@ -51,16 +51,16 @@ library
     exposed-modules:
         Memfd
     other-modules:
-        Create
-        CreateFlags
-        CreateFlagsType
-        CreateOptionsType
-        CreateOptionsFlags
-        DefaultCreateOptions
-        FileSystemType
-        HugeTLBOptionsType
-        HugeTLBSizeType
-        NameType
-        OnExecType
-        SealingType
-        SupportedHugeTLBSizes
+        Memfd.Create
+        Memfd.CreateFlags
+        Memfd.CreateFlagsType
+        Memfd.CreateOptionsType
+        Memfd.CreateOptionsFlags
+        Memfd.DefaultCreateOptions
+        Memfd.FileSystemType
+        Memfd.HugeTLBOptionsType
+        Memfd.HugeTLBSizeType
+        Memfd.NameType
+        Memfd.OnExecType
+        Memfd.SealingType
+        Memfd.SupportedHugeTLBSizes

@@ -1,4 +1,4 @@
-module OnExecType where
+module Memfd.OnExecType where
 
 import Prelude (Eq, Ord, Enum, Bounded, Show)
 

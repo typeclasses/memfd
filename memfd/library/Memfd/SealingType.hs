@@ -1,4 +1,4 @@
-module SealingType where
+module Memfd.SealingType where
 
 import Prelude (Eq, Ord, Enum, Bounded, Show)
 

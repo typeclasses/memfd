@@ -1,9 +1,9 @@
-module CreateOptionsType where
+module Memfd.CreateOptionsType where
 
-import FileSystemType (FileSystem)
-import NameType (Name)
-import OnExecType (OnExec)
-import SealingType (Sealing)
+import Memfd.FileSystemType (FileSystem)
+import Memfd.NameType (Name)
+import Memfd.OnExecType (OnExec)
+import Memfd.SealingType (Sealing)
 
 import Prelude (Eq, Ord, Show)
 

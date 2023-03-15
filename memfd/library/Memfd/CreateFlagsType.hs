@@ -1,4 +1,4 @@
-module CreateFlagsType where
+module Memfd.CreateFlagsType where
 
 import Data.Bits ((.|.))
 import Data.Monoid (Monoid (..))

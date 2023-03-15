@@ -1,6 +1,6 @@
-module FileSystemType where
+module Memfd.FileSystemType where
 
-import HugeTLBOptionsType (HugeTLBOptions)
+import Memfd.HugeTLBOptionsType (HugeTLBOptions)
 
 import Prelude (Show, Eq, Ord, Show)
 

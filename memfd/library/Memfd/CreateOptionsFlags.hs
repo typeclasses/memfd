@@ -1,13 +1,13 @@
-module CreateOptionsFlags (createOptionsFlags) where
+module Memfd.CreateOptionsFlags (createOptionsFlags) where
 
-import CreateFlagsType (CreateFlags)
-import CreateOptionsType (CreateOptions (..))
-import FileSystemType (FileSystem (..))
-import HugeTLBOptionsType (HugeTLBOptions (..))
-import OnExecType (OnExec (RemainOpenOnExec, CloseOnExec))
-import SealingType (Sealing (DoNotAllowSealing, AllowSealing))
+import Memfd.CreateFlagsType (CreateFlags)
+import Memfd.CreateOptionsType (CreateOptions (..))
+import Memfd.FileSystemType (FileSystem (..))
+import Memfd.HugeTLBOptionsType (HugeTLBOptions (..))
+import Memfd.OnExecType (OnExec (RemainOpenOnExec, CloseOnExec))
+import Memfd.SealingType (Sealing (DoNotAllowSealing, AllowSealing))
 
-import qualified CreateFlags as Flags
+import qualified Memfd.CreateFlags as Flags
 
 import Control.Monad (return)
 import Control.Monad.Trans.State.Strict (State, execState, modify')

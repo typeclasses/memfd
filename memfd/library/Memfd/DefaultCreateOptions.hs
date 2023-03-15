@@ -1,10 +1,10 @@
-module DefaultCreateOptions where
+module Memfd.DefaultCreateOptions where
 
-import CreateOptionsType (CreateOptions(..))
-import FileSystemType (FileSystem (TemporaryFileSystem))
-import NameType (Name)
-import OnExecType (OnExec (RemainOpenOnExec))
-import SealingType (Sealing (DoNotAllowSealing))
+import Memfd.CreateOptionsType (CreateOptions(..))
+import Memfd.FileSystemType (FileSystem (TemporaryFileSystem))
+import Memfd.NameType (Name)
+import Memfd.OnExecType (OnExec (RemainOpenOnExec))
+import Memfd.SealingType (Sealing (DoNotAllowSealing))
 
 {-| Default options for 'Memfd.create', corresponding to what you get what you
     use the C library and don't set any flags

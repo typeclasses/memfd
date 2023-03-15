@@ -1,9 +1,9 @@
-module Create where
+module Memfd.Create where
 
-import CreateFlagsType (CreateFlags(..))
-import CreateOptionsType (CreateOptions(..))
-import CreateOptionsFlags (createOptionsFlags)
-import NameType (Name (..))
+import Memfd.CreateFlagsType (CreateFlags(..))
+import Memfd.CreateOptionsType (CreateOptions(..))
+import Memfd.CreateOptionsFlags (createOptionsFlags)
+import Memfd.NameType (Name (..))
 
 import Foreign.C as C (CInt (..), CUInt (..))
 import Foreign.C.String (CString, withCString)

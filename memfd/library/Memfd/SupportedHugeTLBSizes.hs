@@ -1,8 +1,8 @@
-module SupportedHugeTLBSizes where
+module Memfd.SupportedHugeTLBSizes where
 
-import HugeTLBSizeType
+import Memfd.HugeTLBSizeType
 
-import qualified CreateFlags as Flags
+import qualified Memfd.CreateFlags as Flags
 
 import Data.Maybe (isJust)
 import Prelude (enumFrom, minBound)

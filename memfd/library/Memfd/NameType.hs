@@ -1,4 +1,4 @@
-module NameType where
+module Memfd.NameType where
 
 import Data.String (IsString, String)
 import Prelude (Eq, Ord, Show)

@@ -1,6 +1,6 @@
-module HugeTLBOptionsType where
+module Memfd.HugeTLBOptionsType where
 
-import HugeTLBSizeType (HugeTLBSize)
+import Memfd.HugeTLBSizeType (HugeTLBSize)
 
 import Prelude (Eq, Ord, Show)
 

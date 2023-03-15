@@ -1,7 +1,7 @@
-module CreateFlags where
+module Memfd.CreateFlags where
 
-import CreateFlagsType (CreateFlags (..))
-import HugeTLBSizeType (HugeTLBSize (..))
+import Memfd.CreateFlagsType (CreateFlags (..))
+import Memfd.HugeTLBSizeType (HugeTLBSize (..))
 
 import Data.Maybe (Maybe (..))
 
