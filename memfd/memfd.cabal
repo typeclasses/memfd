@@ -32,7 +32,6 @@ library
     default-extensions:
         BlockArguments
         CApiFFI
-        CPP
         DerivingStrategies
         GeneralizedNewtypeDeriving
         NoImplicitPrelude
