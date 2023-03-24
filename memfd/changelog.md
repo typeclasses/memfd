@@ -1,3 +1,7 @@
+### 1.0.1.3 (2023-03-24)
+
+Remove unneeded `CApiFFI` language flag
+
 ### 1.0.1.2 (2023-03-15)
 
 Support GHC 9.6

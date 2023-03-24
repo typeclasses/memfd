@@ -1,7 +1,7 @@
 cabal-version: 3.0
 
 name: memfd
-version: 1.0.1.2
+version: 1.0.1.3
 synopsis: Open temporary anonymous Linux file handles
 category: Filesystem, Linux
 
@@ -31,7 +31,6 @@ library
     hs-source-dirs: library
     default-extensions:
         BlockArguments
-        CApiFFI
         DerivingStrategies
         GeneralizedNewtypeDeriving
         NoImplicitPrelude
